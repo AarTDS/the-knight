@@ -10,10 +10,10 @@ if (l1B68F450_0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 53B377C9
 	/// @DnDParent : 1B68F450
-	/// @DnDArgument : "value" "-5"
+	/// @DnDArgument : "value" "-2"
 	/// @DnDArgument : "value_relative" "1"
 	/// @DnDArgument : "instvar" "1"
-	y += -5;
+	y += -2;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -40,10 +40,10 @@ if (l1B68F450_0)
 		/// @DnDVersion : 1
 		/// @DnDHash : 3E01561C
 		/// @DnDParent : 17E1249B
-		/// @DnDArgument : "value" "-8"
+		/// @DnDArgument : "value" "-4"
 		/// @DnDArgument : "value_relative" "1"
 		/// @DnDArgument : "instvar" "1"
-		y += -8;
+		y += -4;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -67,10 +67,10 @@ if (l48E40533_0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 1DC94A64
 	/// @DnDParent : 48E40533
-	/// @DnDArgument : "value" "5"
+	/// @DnDArgument : "value" "2"
 	/// @DnDArgument : "value_relative" "1"
 	/// @DnDArgument : "instvar" "1"
-	y += 5;
+	y += 2;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -97,10 +97,10 @@ if (l48E40533_0)
 		/// @DnDVersion : 1
 		/// @DnDHash : 3CA014F9
 		/// @DnDParent : 4B7BA9BE
-		/// @DnDArgument : "value" "8"
+		/// @DnDArgument : "value" "4"
 		/// @DnDArgument : "value_relative" "1"
 		/// @DnDArgument : "instvar" "1"
-		y += 8;
+		y += 4;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -124,9 +124,9 @@ if (l162A5F6D_0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 6E30C413
 	/// @DnDParent : 162A5F6D
-	/// @DnDArgument : "value" "-5"
+	/// @DnDArgument : "value" "-2"
 	/// @DnDArgument : "value_relative" "1"
-	x += -5;
+	x += -2;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -153,9 +153,9 @@ if (l162A5F6D_0)
 		/// @DnDVersion : 1
 		/// @DnDHash : 3820477E
 		/// @DnDParent : 7A57E0C7
-		/// @DnDArgument : "value" "-8"
+		/// @DnDArgument : "value" "-4"
 		/// @DnDArgument : "value_relative" "1"
-		x += -8;
+		x += -4;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -179,9 +179,9 @@ if (l0A7326ED_0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 6B524712
 	/// @DnDParent : 0A7326ED
-	/// @DnDArgument : "value" "5"
+	/// @DnDArgument : "value" "2"
 	/// @DnDArgument : "value_relative" "1"
-	x += 5;
+	x += 2;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -208,9 +208,9 @@ if (l0A7326ED_0)
 		/// @DnDVersion : 1
 		/// @DnDHash : 5D05F54D
 		/// @DnDParent : 3E8C04FF
-		/// @DnDArgument : "value" "8"
+		/// @DnDArgument : "value" "4"
 		/// @DnDArgument : "value_relative" "1"
-		x += 8;
+		x += 4;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
