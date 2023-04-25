@@ -21,8 +21,8 @@ _gridHeight = to_tile(room_height);
 /// @DnDHash : 68B7E4BD
 /// @DnDArgument : "var" "global.AIGrid"
 /// @DnDArgument : "function" "mp_grid_create"
-/// @DnDArgument : "arg" "0,0, _gridWidth, _gridHeight, TILESIZE, TILESIZE"
-global.AIGrid = mp_grid_create(0,0, _gridWidth, _gridHeight, TILESIZE, TILESIZE);
+/// @DnDArgument : "arg" "0,0, _gridHeight, _gridWidth, TILESIZE, TILESIZE"
+global.AIGrid = mp_grid_create(0,0, _gridHeight, _gridWidth, TILESIZE, TILESIZE);
 
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
