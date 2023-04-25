@@ -5,24 +5,13 @@
 /// @DnDArgument : "var" "colTilemap"
 colTilemap = layer_tilemap_get_id("Tiles_2");
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 5CC2E02A
-/// @DnDInput : 2
-/// @DnDArgument : "expr" "to_tile(room_width)"
-/// @DnDArgument : "expr_1" "to_tile(room_height)"
-/// @DnDArgument : "var" "_gridWidth"
-/// @DnDArgument : "var_1" "_gridHeight"
-_gridWidth = to_tile(room_width);
-_gridHeight = to_tile(room_height);
-
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 68B7E4BD
 /// @DnDArgument : "var" "global.AIGrid"
 /// @DnDArgument : "function" "mp_grid_create"
-/// @DnDArgument : "arg" "0,0, _gridHeight, _gridWidth, TILESIZE, TILESIZE"
-global.AIGrid = mp_grid_create(0,0, _gridHeight, _gridWidth, TILESIZE, TILESIZE);
+/// @DnDArgument : "arg" "0,0, room_width/8, room_height/8, 32, 32"
+global.AIGrid = mp_grid_create(0,0, room_width/8, room_height/8, 32, 32);
 
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
@@ -36,18 +25,18 @@ mp_grid_add_instances(global.AIGrid,obj_coltest, false);
 /// @DnDHash : 32A2BA15
 /// @DnDArgument : "init" "_x=0"
 /// @DnDArgument : "init_temp" "1"
-/// @DnDArgument : "cond" "_x < _gridWidth"
+/// @DnDArgument : "cond" "_x < room_width"
 /// @DnDArgument : "expr" "_x ++"
-for(var _x=0; _x < _gridWidth; _x ++) {
+for(var _x=0; _x < room_width; _x ++) {
 	/// @DnDAction : YoYo Games.Loops.For_Loop
 	/// @DnDVersion : 1
 	/// @DnDHash : 07AA661B
 	/// @DnDParent : 32A2BA15
 	/// @DnDArgument : "init" "_y=0"
 	/// @DnDArgument : "init_temp" "1"
-	/// @DnDArgument : "cond" "_y < _gridHeight"
+	/// @DnDArgument : "cond" "_y < room_height"
 	/// @DnDArgument : "expr" "_y ++"
-	for(var _y=0; _y < _gridHeight; _y ++) {
+	for(var _y=0; _y < room_height; _y ++) {
 		/// @DnDAction : YoYo Games.Common.Temp_Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 26D0A885
