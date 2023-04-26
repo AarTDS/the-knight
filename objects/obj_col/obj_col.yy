@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_coltest",
-  "spriteId": {
-    "name": "spr_player_shadow",
-    "path": "sprites/spr_player_shadow/spr_player_shadow.yy",
-  },
+  "name": "obj_col",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
