@@ -16,7 +16,8 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"obj_npc_test","order":1,"path":"objects/obj_npc_test/obj_npc_test.yy",},
+    {"name":"obj_scared","order":1,"path":"objects/obj_scared/obj_scared.yy",},
+    {"name":"obj_runaway","order":2,"path":"objects/obj_runaway/obj_runaway.yy",},
     {"name":"spr_npc_test_R","order":1,"path":"sprites/spr_npc_test_R/spr_npc_test_R.yy",},
     {"name":"spr_npc_test_L","order":2,"path":"sprites/spr_npc_test_L/spr_npc_test_L.yy",},
   ],

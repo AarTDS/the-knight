@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pit",
+  "name": "obj_runaway",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -9,10 +9,7 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": {
-    "name": "obj_col",
-    "path": "objects/obj_col/obj_col.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_player_shadow",
-    "path": "sprites/spr_player_shadow/spr_player_shadow.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

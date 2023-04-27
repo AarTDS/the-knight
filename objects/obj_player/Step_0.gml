@@ -11,8 +11,9 @@ if (l1B68F450_0)
 	/// @DnDHash : 7AD750A1
 	/// @DnDParent : 1B68F450
 	/// @DnDArgument : "expr" "-walk_spd"
+	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "vsp"
-	vsp = -walk_spd;
+	vsp += -walk_spd;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -40,8 +41,9 @@ if (l1B68F450_0)
 		/// @DnDHash : 49FF9105
 		/// @DnDParent : 1DCBD1E6
 		/// @DnDArgument : "expr" "-run_spd"
+		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "vsp"
-		vsp = -run_spd;
+		vsp += -run_spd;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -66,8 +68,9 @@ if (l48E40533_0)
 	/// @DnDHash : 68458307
 	/// @DnDParent : 48E40533
 	/// @DnDArgument : "expr" "walk_spd"
+	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "vsp"
-	vsp = walk_spd;
+	vsp += walk_spd;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -95,8 +98,9 @@ if (l48E40533_0)
 		/// @DnDHash : 23933309
 		/// @DnDParent : 658C0EAF
 		/// @DnDArgument : "expr" "run_spd"
+		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "vsp"
-		vsp = run_spd;
+		vsp += run_spd;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -121,8 +125,9 @@ if (l162A5F6D_0)
 	/// @DnDHash : 190B8498
 	/// @DnDParent : 162A5F6D
 	/// @DnDArgument : "expr" "-walk_spd"
+	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "hsp"
-	hsp = -walk_spd;
+	hsp += -walk_spd;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -150,8 +155,9 @@ if (l162A5F6D_0)
 		/// @DnDHash : 31456810
 		/// @DnDParent : 35EB63B9
 		/// @DnDArgument : "expr" "-run_spd"
+		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "hsp"
-		hsp = -run_spd;
+		hsp += -run_spd;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -176,8 +182,9 @@ if (l0A7326ED_0)
 	/// @DnDHash : 3A61BEBD
 	/// @DnDParent : 0A7326ED
 	/// @DnDArgument : "expr" "walk_spd"
+	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "hsp"
-	hsp = walk_spd;
+	hsp += walk_spd;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -205,8 +212,9 @@ if (l0A7326ED_0)
 		/// @DnDHash : 396643B9
 		/// @DnDParent : 3E8C04FF
 		/// @DnDArgument : "expr" "run_spd"
+		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "hsp"
-		hsp = run_spd;
+		hsp += run_spd;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -289,36 +297,39 @@ if (l64A717B1_0)
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 471E65C7
-/// @DnDArgument : "code" "if place_meeting(x+hsp,y+vsp,obj_col)$(13_10){$(13_10)	while !place_meeting(x+(sign(hsp))*2,y+(sign(vsp))*2,obj_col)$(13_10)	{$(13_10)		x+=sign(hsp)$(13_10)		y+=sign(vsp)$(13_10)	}$(13_10)	hsp=0$(13_10)	vsp=0$(13_10)}"
-if place_meeting(x+hsp,y+vsp,obj_col)
+/// @DnDArgument : "code" "if place_meeting(x+hsp,y,obj_col)$(13_10){$(13_10)	while !place_meeting (x+sign(hsp), y, obj_col)$(13_10)	{$(13_10)		x+=sign(hsp)$(13_10)	}$(13_10)	hsp=0$(13_10)}$(13_10)$(13_10)$(13_10)else if place_meeting(x,y+vsp,obj_col)$(13_10){$(13_10)	while !place_meeting (x, y+sign(vsp), obj_col)$(13_10)	{$(13_10)		y+=sign(vsp)$(13_10)	}$(13_10)	vsp=0$(13_10)}$(13_10)"
+if place_meeting(x+hsp,y,obj_col)
 {
-	while !place_meeting(x+(sign(hsp))*2,y+(sign(vsp))*2,obj_col)
+	while !place_meeting (x+sign(hsp), y, obj_col)
 	{
 		x+=sign(hsp)
-		y+=sign(vsp)
 	}
 	hsp=0
+}
+
+
+else if place_meeting(x,y+vsp,obj_col)
+{
+	while !place_meeting (x, y+sign(vsp), obj_col)
+	{
+		y+=sign(vsp)
+	}
 	vsp=0
 }
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 26BF5D98
-/// @DnDInput : 2
+/// @DnDHash : 041E22DB
+/// @DnDInput : 4
 /// @DnDArgument : "expr" "hsp"
 /// @DnDArgument : "expr_relative" "1"
 /// @DnDArgument : "expr_1" "vsp"
 /// @DnDArgument : "expr_relative_1" "1"
 /// @DnDArgument : "var" "x"
 /// @DnDArgument : "var_1" "y"
+/// @DnDArgument : "var_2" "vsp"
+/// @DnDArgument : "var_3" "hsp"
 x += hsp;
 y += vsp;
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 76E5A27B
-/// @DnDInput : 2
-/// @DnDArgument : "var" "vsp"
-/// @DnDArgument : "var_1" "hsp"
 vsp = 0;
 hsp = 0;
