@@ -6,6 +6,6 @@ draw_self();
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 27DAA499
-/// @DnDDisabled : 1
 /// @DnDArgument : "function" "draw_path"
 /// @DnDArgument : "arg" "path, 0, 0, 1"
+draw_path(path, 0, 0, 1);
