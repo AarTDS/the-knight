@@ -297,23 +297,14 @@ if (l64A717B1_0)
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 471E65C7
-/// @DnDArgument : "code" "if place_meeting(x+hsp,y,obj_col)$(13_10){$(13_10)	while !place_meeting (x+sign(hsp), y, obj_col)$(13_10)	{$(13_10)		x+=sign(hsp)$(13_10)	}$(13_10)	hsp=0$(13_10)}$(13_10)$(13_10)$(13_10)else if place_meeting(x,y+vsp,obj_col)$(13_10){$(13_10)	while !place_meeting (x, y+sign(vsp), obj_col)$(13_10)	{$(13_10)		y+=sign(vsp)$(13_10)	}$(13_10)	vsp=0$(13_10)}$(13_10)"
+/// @DnDArgument : "code" "if place_meeting(x+hsp,y,obj_col)$(13_10){$(13_10)	hsp=0$(13_10)}$(13_10)$(13_10)if place_meeting(x,y+vsp,obj_col)$(13_10){$(13_10)	vsp=0$(13_10)}"
 if place_meeting(x+hsp,y,obj_col)
 {
-	while !place_meeting (x+sign(hsp), y, obj_col)
-	{
-		x+=sign(hsp)
-	}
 	hsp=0
 }
 
-
-else if place_meeting(x,y+vsp,obj_col)
+if place_meeting(x,y+vsp,obj_col)
 {
-	while !place_meeting (x, y+sign(vsp), obj_col)
-	{
-		y+=sign(vsp)
-	}
 	vsp=0
 }
 
@@ -333,3 +324,36 @@ x += hsp;
 y += vsp;
 vsp = 0;
 hsp = 0;
+
+/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Pressed
+/// @DnDVersion : 1.1
+/// @DnDHash : 6A2BFFAF
+var l6A2BFFAF_0;
+l6A2BFFAF_0 = mouse_check_button_pressed(mb_left);
+if (l6A2BFFAF_0)
+{
+	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 53BA6598
+	/// @DnDParent : 6A2BFFAF
+	/// @DnDArgument : "xpos_relative" "1"
+	/// @DnDArgument : "ypos_relative" "1"
+	/// @DnDArgument : "objectid" "obj_player_arm"
+	/// @DnDSaveInfo : "objectid" "obj_player_arm"
+	instance_create_layer(x + 0, y + 0, "Instances", obj_player_arm);
+}
+
+/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Released
+/// @DnDVersion : 1.1
+/// @DnDHash : 7FB29D28
+var l7FB29D28_0;
+l7FB29D28_0 = mouse_check_button_released(mb_left);
+if (l7FB29D28_0)
+{
+	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 49B27357
+	/// @DnDApplyTo : {obj_player_arm}
+	/// @DnDParent : 7FB29D28
+	with(obj_player_arm) instance_destroy();
+}

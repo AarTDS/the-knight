@@ -16,8 +16,12 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_player_arm","order":3,"path":"objects/obj_player_arm/obj_player_arm.yy",},
     {"name":"obj_scared","order":1,"path":"objects/obj_scared/obj_scared.yy",},
+    {"name":"spr_player_arm_F","order":4,"path":"sprites/spr_player_arm_F/spr_player_arm_F.yy",},
     {"name":"obj_runaway","order":2,"path":"objects/obj_runaway/obj_runaway.yy",},
+    {"name":"spr_player_arm_R","order":5,"path":"sprites/spr_player_arm_R/spr_player_arm_R.yy",},
+    {"name":"spr_player_arm_L","order":3,"path":"sprites/spr_player_arm_L/spr_player_arm_L.yy",},
     {"name":"spr_npc_test_R","order":1,"path":"sprites/spr_npc_test_R/spr_npc_test_R.yy",},
     {"name":"spr_npc_test_L","order":2,"path":"sprites/spr_npc_test_L/spr_npc_test_L.yy",},
   ],
