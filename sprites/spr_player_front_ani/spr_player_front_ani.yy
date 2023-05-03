@@ -2,18 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_player_front_ani",
-<<<<<<< Updated upstream
-  "bbox_bottom": 3014,
-  "bbox_left": 788,
-  "bbox_right": 1449,
-  "bbox_top": 2740,
   "bboxMode": 2,
-  "collisionKind": 1,
-  "collisionTolerance": 0,
-  "DynamicTexturePage": false,
-  "edgeFiltering": false,
-=======
-  "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -21,13 +10,12 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 230,
-  "bbox_right": 2324,
-  "bbox_top": 115,
-  "bbox_bottom": 2979,
+  "bbox_left": 788,
+  "bbox_right": 1449,
+  "bbox_top": 2740,
+  "bbox_bottom": 3014,
   "HTile": false,
   "VTile": false,
->>>>>>> Stashed changes
   "For3D": false,
   "width": 2500,
   "height": 4000,
@@ -108,13 +96,9 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 1152,
-<<<<<<< Updated upstream
     "yorigin": 1808,
-=======
-    "yorigin": 1921,
     "eventToFunction": {},
     "eventStubScript": null,
->>>>>>> Stashed changes
   },
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"58bf1392-9165-4a01-9e26-a08a4ebccf72","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
