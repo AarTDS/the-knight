@@ -6,6 +6,13 @@ draw_self();
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 27DAA499
-/// @DnDDisabled : 1
 /// @DnDArgument : "function" "draw_path"
 /// @DnDArgument : "arg" "path, 0, 0, 1"
+draw_path(path, 0, 0, 1);
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 1E0F1B86
+/// @DnDArgument : "function" "draw_rectangle"
+/// @DnDArgument : "arg" "bbox_left,bbox_top,bbox_right,bbox_bottom,1"
+draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);

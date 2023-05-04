@@ -357,3 +357,14 @@ if (l7FB29D28_0)
 	/// @DnDParent : 7FB29D28
 	with(obj_player_arm) instance_destroy();
 }
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 28898E87
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "clamp(x,0,room_width)"
+/// @DnDArgument : "expr_1" "clamp(y,0,room_height)"
+/// @DnDArgument : "var" "x"
+/// @DnDArgument : "var_1" "y"
+x = clamp(x,0,room_width);
+y = clamp(y,0,room_height);
