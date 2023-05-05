@@ -17,7 +17,7 @@ vsp = 0;
 /// @DnDVersion : 1
 /// @DnDHash : 46BFB14B
 /// @DnDInput : 2
-/// @DnDArgument : "var" "sword_thrown"
+/// @DnDArgument : "var" "global.sword_thrown"
 /// @DnDArgument : "var_1" "sword_arm"
-sword_thrown = 0;
+global.sword_thrown = 0;
 sword_arm = 0;

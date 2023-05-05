@@ -1,11 +1,12 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
-/// @DnDHash : 471E65C7
-/// @DnDArgument : "code" "if place_meeting(x+hsp,y,obj_col)$(13_10){$(13_10)	hsp=0$(13_10)}$(13_10)$(13_10)if place_meeting(x,y+vsp,obj_col)$(13_10){$(13_10)	vsp=0$(13_10)}"
+/// @DnDHash : 3B750AAF
+/// @DnDArgument : "code" "if place_meeting(x+hsp,y,obj_col)$(13_10){$(13_10)	hsp=0$(13_10)}$(13_10)	$(13_10)$(13_10)if place_meeting(x,y+vsp,obj_col)$(13_10){$(13_10)	vsp=0$(13_10)}"
 if place_meeting(x+hsp,y,obj_col)
 {
 	hsp=0
 }
+	
 
 if place_meeting(x,y+vsp,obj_col)
 {
@@ -32,8 +33,8 @@ hsp = 0;
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 47331841
-/// @DnDArgument : "var" "sword_thrown"
-if(sword_thrown == 0)
+/// @DnDArgument : "var" "global.sword_thrown"
+if(global.sword_thrown == 0)
 {
 	/// @DnDAction : YoYo Games.Common.Temp_Variable
 	/// @DnDVersion : 1
@@ -892,8 +893,8 @@ if(sword_thrown == 0)
 		/// @DnDHash : 1C05D411
 		/// @DnDParent : 0D0F27C8
 		/// @DnDArgument : "expr" "1"
-		/// @DnDArgument : "var" "sword_thrown"
-		sword_thrown = 1;
+		/// @DnDArgument : "var" "global.sword_thrown"
+		global.sword_thrown = 1;
 	
 		/// @DnDAction : YoYo Games.Instances.Create_Instance
 		/// @DnDVersion : 1
@@ -921,9 +922,9 @@ y = clamp(y,0,room_height);
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 54D366EA
-/// @DnDArgument : "var" "sword_thrown"
+/// @DnDArgument : "var" "global.sword_thrown"
 /// @DnDArgument : "value" "1"
-if(sword_thrown == 1)
+if(global.sword_thrown == 1)
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
@@ -946,8 +947,8 @@ if (l0F7CB191_0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 41BF358A
 	/// @DnDParent : 0F7CB191
-	/// @DnDArgument : "var" "sword_thrown"
-	sword_thrown = 0;
+	/// @DnDArgument : "var" "global.sword_thrown"
+	global.sword_thrown = 0;
 
 	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 	/// @DnDVersion : 1

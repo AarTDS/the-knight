@@ -1,16 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_col",
-  "spriteId": null,
+  "name": "obj_house_test",
+  "spriteId": {
+    "name": "spr_house_test",
+    "path": "sprites/spr_house_test/spr_house_test.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_instances",
-    "path": "objects/obj_instances/obj_instances.yy",
+    "name": "obj_col",
+    "path": "objects/obj_col/obj_col.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
