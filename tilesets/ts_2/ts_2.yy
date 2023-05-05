@@ -2,8 +2,27 @@
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
   "name": "ts_2",
+  "spriteId": {
+    "name": "spr_tile_map_2",
+    "path": "sprites/spr_tile_map_2/spr_tile_map_2.yy",
+  },
+  "tileWidth": 1209,
+  "tileHeight": 1202,
+  "tilexoff": 0,
+  "tileyoff": 0,
+  "tilehsep": 8,
+  "tilevsep": 8,
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "out_tilehborder": 10,
+  "out_tilevborder": 10,
+  "out_columns": 5,
+  "tile_count": 20,
   "autoTileSets": [
-    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"diogonals","closed_edge":false,"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"diogonals","tiles":[
         6,
         9,
         8,
@@ -51,8 +70,8 @@
         0,
         0,
         0,
-      ],},
-    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"corners and straitghs","closed_edge":false,"tiles":[
+      ],"closed_edge":false,},
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"corners and straitghs","tiles":[
         6,
         12,
         10,
@@ -100,30 +119,10 @@
         0,
         0,
         0,
-      ],},
+      ],"closed_edge":false,},
   ],
-  "macroPageTiles": {
-    "SerialiseHeight": 0,
-    "SerialiseWidth": 0,
-    "TileSerialiseData": [],
-  },
-  "out_columns": 5,
-  "out_tilehborder": 10,
-  "out_tilevborder": 10,
-  "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
-  },
-  "spriteId": {
-    "name": "spr_tile_map_2",
-    "path": "sprites/spr_tile_map_2/spr_tile_map_2.yy",
-  },
-  "spriteNoExport": true,
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "tile_count": 20,
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -149,12 +148,13 @@
     ],
     "SerialiseFrameCount": 1,
   },
-  "tileAnimationFrames": [],
-  "tileAnimationSpeed": 15.0,
-  "tileHeight": 1202,
-  "tilehsep": 8,
-  "tilevsep": 8,
-  "tileWidth": 1209,
-  "tilexoff": 0,
-  "tileyoff": 0,
+  "macroPageTiles": {
+    "SerialiseWidth": 0,
+    "SerialiseHeight": 0,
+    "TileSerialiseData": [],
+  },
+  "parent": {
+    "name": "Tile Sets",
+    "path": "folders/Tile Sets.yy",
+  },
 }

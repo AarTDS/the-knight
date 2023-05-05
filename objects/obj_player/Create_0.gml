@@ -12,3 +12,12 @@ walk_spd = 2;
 run_spd = 4;
 hsp = 0;
 vsp = 0;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 46BFB14B
+/// @DnDInput : 2
+/// @DnDArgument : "var" "sword_thrown"
+/// @DnDArgument : "var_1" "sword_arm"
+sword_thrown = 0;
+sword_arm = 0;
