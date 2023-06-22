@@ -59,3 +59,9 @@ mp_grid_add_instances(global.AIGrid,obj_col, false);
 /// @DnDParent : 49063402
 /// @DnDArgument : "function" "mp_grid_add_cell"
 /// @DnDArgument : "arg" "global.AIGrid,_x, _y"
+
+/// @DnDAction : YoYo Games.Instances.Set_Alarm
+/// @DnDVersion : 1
+/// @DnDHash : 182A4CDE
+/// @DnDArgument : "steps" "100"
+alarm_set(0, 100);

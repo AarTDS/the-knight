@@ -192,3 +192,14 @@ if(direction == 270)
 		sprite_index = front_walking;
 	}
 }
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 54862974
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "clamp(x,0,room_width)"
+/// @DnDArgument : "expr_1" "clamp(y,0,room_height)"
+/// @DnDArgument : "var" "x"
+/// @DnDArgument : "var_1" "y"
+x = clamp(x,0,room_width);
+y = clamp(y,0,room_height);
