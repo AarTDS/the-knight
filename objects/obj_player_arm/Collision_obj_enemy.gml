@@ -18,4 +18,10 @@ with(other) {
 	/// @DnDArgument : "steps" "10"
 	/// @DnDArgument : "alarm" "2"
 	alarm_set(2, 10);
+
+	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 087D4F2E
+	/// @DnDParent : 183264E1
+	instance_destroy();
 }
