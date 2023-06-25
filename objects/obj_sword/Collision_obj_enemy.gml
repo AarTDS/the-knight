@@ -24,9 +24,26 @@ with(other) {
 	/// @DnDArgument : "alarm" "2"
 	alarm_set(2, 10);
 
-	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDAction : YoYo Games.Instance Variables.Set_Lives
 	/// @DnDVersion : 1
-	/// @DnDHash : 26A7986A
+	/// @DnDHash : 04BE8BD4
 	/// @DnDParent : 183264E1
-	instance_destroy();
+	/// @DnDArgument : "lives" "-1"
+	/// @DnDArgument : "lives_relative" "1"
+	if(!variable_instance_exists(id, "__dnd_lives")) __dnd_lives = 0;
+	__dnd_lives += real(-1);
+
+	/// @DnDAction : YoYo Games.Instance Variables.If_Lives
+	/// @DnDVersion : 1
+	/// @DnDHash : 7FF995C4
+	/// @DnDParent : 183264E1
+	if(!variable_instance_exists(id, "__dnd_lives")) __dnd_lives = 0;
+	if(__dnd_lives == 0)
+	{
+		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 1D43C776
+		/// @DnDParent : 7FF995C4
+		instance_destroy();
+	}
 }

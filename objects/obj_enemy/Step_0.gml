@@ -6,6 +6,6 @@ event_inherited();
 /// @DnDAction : YoYo Games.Instances.Set_Instance_Var
 /// @DnDVersion : 1
 /// @DnDHash : 393A5BC1
-/// @DnDArgument : "value" ".75"
+/// @DnDArgument : "value" "enemy_fade"
 /// @DnDArgument : "instvar" "13"
-image_alpha = .75;
+image_alpha = enemy_fade;

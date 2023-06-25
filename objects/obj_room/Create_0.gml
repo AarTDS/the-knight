@@ -1,3 +1,26 @@
+/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
+/// @DnDVersion : 1.1
+/// @DnDHash : 75B6A708
+/// @DnDArgument : "sound" "nature"
+/// @DnDArgument : "volume" "0.25"
+/// @DnDSaveInfo : "sound" "nature"
+audio_sound_gain(nature, 0.25, 0);
+
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 30D6EAD9
+/// @DnDArgument : "soundid" "nature"
+/// @DnDArgument : "loop" "1"
+/// @DnDSaveInfo : "soundid" "nature"
+audio_play_sound(nature, 0, 1, 1.0, undefined, 1.0);
+
+/// @DnDAction : YoYo Games.Instance Variables.Set_Lives
+/// @DnDVersion : 1
+/// @DnDHash : 160E543A
+/// @DnDArgument : "lives" "5"
+
+__dnd_lives = real(5);
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 2B09AF23
@@ -17,8 +40,8 @@ global.AIGrid = mp_grid_create(0,0, room_width div 8, room_height div 8, 32, 32)
 /// @DnDVersion : 1
 /// @DnDHash : 5C920694
 /// @DnDArgument : "function" "mp_grid_add_instances"
-/// @DnDArgument : "arg" "global.AIGrid,obj_col, false"
-mp_grid_add_instances(global.AIGrid,obj_col, false);
+/// @DnDArgument : "arg" "global.AIGrid,obj_col, true"
+mp_grid_add_instances(global.AIGrid,obj_col, true);
 
 /// @DnDAction : YoYo Games.Loops.For_Loop
 /// @DnDVersion : 1
@@ -63,5 +86,5 @@ mp_grid_add_instances(global.AIGrid,obj_col, false);
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 182A4CDE
-/// @DnDArgument : "steps" "100"
-alarm_set(0, 100);
+/// @DnDArgument : "steps" "300"
+alarm_set(0, 300);
