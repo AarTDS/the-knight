@@ -13,8 +13,9 @@ __dnd_lives = real(3);
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 71F9FFED
+/// @DnDArgument : "expr" "room_speed"
 /// @DnDArgument : "var" "counter"
-counter = 0;
+counter = room_speed;
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1

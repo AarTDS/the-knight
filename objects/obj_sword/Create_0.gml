@@ -21,9 +21,9 @@ image_alpha = .5;
 /// @DnDAction : YoYo Games.Audio.If_Audio_Playing
 /// @DnDVersion : 1
 /// @DnDHash : 139D318D
-/// @DnDArgument : "soundid" "Sword_Draw"
-/// @DnDSaveInfo : "soundid" "Sword_Draw"
-var l139D318D_0 = Sword_Draw;
+/// @DnDArgument : "soundid" "swordraw"
+/// @DnDSaveInfo : "soundid" "swordraw"
+var l139D318D_0 = swordraw;
 if (audio_is_playing(l139D318D_0))
 {
 
@@ -34,18 +34,20 @@ if (audio_is_playing(l139D318D_0))
 /// @DnDHash : 61B0AE61
 else
 {
+	/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 51F2A400
+	/// @DnDParent : 61B0AE61
+	/// @DnDArgument : "sound" "swordraw"
+	/// @DnDArgument : "volume" "0.25"
+	/// @DnDSaveInfo : "sound" "swordraw"
+	audio_sound_gain(swordraw, 0.25, 0);
+
 	/// @DnDAction : YoYo Games.Audio.Play_Audio
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 2A52CF9C
 	/// @DnDParent : 61B0AE61
-	/// @DnDArgument : "soundid" "Sword_Draw"
-	/// @DnDSaveInfo : "soundid" "Sword_Draw"
-	audio_play_sound(Sword_Draw, 0, 0, 1.0, undefined, 1.0);
-
-	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 00CA80FB
-	/// @DnDParent : 61B0AE61
-	/// @DnDArgument : "var" "draw_sword"
-	draw_sword = 0;
+	/// @DnDArgument : "soundid" "swordraw"
+	/// @DnDSaveInfo : "soundid" "swordraw"
+	audio_play_sound(swordraw, 0, 0, 1.0, undefined, 1.0);
 }

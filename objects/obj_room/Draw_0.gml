@@ -1,11 +1,11 @@
-/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
-/// @DnDHash : 16902005
-/// @DnDInput : 2
-/// @DnDArgument : "function" "layer_depth"
-/// @DnDArgument : "arg" ""Instances""
-/// @DnDArgument : "arg_1" "obj_instances.depth-400"
-layer_depth("Instances", obj_instances.depth-400);
+/// @DnDHash : 41EC05FC
+/// @DnDArgument : "x" "camera_get_view_x(camera_get_active())+30"
+/// @DnDArgument : "y" "camera_get_view_y(camera_get_active())+60"
+/// @DnDArgument : "caption" ""Score: ""
+/// @DnDArgument : "var" "global.score"
+draw_text(camera_get_view_x(camera_get_active())+30, camera_get_view_y(camera_get_active())+60, string("Score: ") + string(global.score));
 
 /// @DnDAction : YoYo Games.Instance Variables.If_Lives
 /// @DnDVersion : 1

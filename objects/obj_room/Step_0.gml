@@ -1,9 +1,9 @@
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
 /// @DnDHash : 56EFC14C
-/// @DnDArgument : "key" "vk_left"
+/// @DnDArgument : "key" "ord("A")"
 var l56EFC14C_0;
-l56EFC14C_0 = keyboard_check(vk_left);
+l56EFC14C_0 = keyboard_check(ord("A"));
 if (l56EFC14C_0)
 {
 	/// @DnDAction : YoYo Games.Audio.If_Audio_Playing
@@ -83,9 +83,9 @@ if (l56EFC14C_0)
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
 /// @DnDHash : 79B2FF2B
-/// @DnDArgument : "key" "vk_up"
+/// @DnDArgument : "key" "ord("W")"
 var l79B2FF2B_0;
-l79B2FF2B_0 = keyboard_check(vk_up);
+l79B2FF2B_0 = keyboard_check(ord("W"));
 if (l79B2FF2B_0)
 {
 	/// @DnDAction : YoYo Games.Audio.If_Audio_Playing
@@ -165,9 +165,9 @@ if (l79B2FF2B_0)
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
 /// @DnDHash : 1D6CC362
-/// @DnDArgument : "key" "vk_right"
+/// @DnDArgument : "key" "ord("D")"
 var l1D6CC362_0;
-l1D6CC362_0 = keyboard_check(vk_right);
+l1D6CC362_0 = keyboard_check(ord("D"));
 if (l1D6CC362_0)
 {
 	/// @DnDAction : YoYo Games.Audio.If_Audio_Playing
@@ -247,9 +247,9 @@ if (l1D6CC362_0)
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
 /// @DnDHash : 19FCC32D
-/// @DnDArgument : "key" "vk_down"
+/// @DnDArgument : "key" "ord("S")"
 var l19FCC32D_0;
-l19FCC32D_0 = keyboard_check(vk_down);
+l19FCC32D_0 = keyboard_check(ord("S"));
 if (l19FCC32D_0)
 {
 	/// @DnDAction : YoYo Games.Audio.If_Audio_Playing
@@ -351,14 +351,35 @@ if (l2D3CA07B_0)
 	audio_stop_sound(running);
 }
 
-/// @DnDAction : YoYo Games.Drawing.Get_Font
+/// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
-/// @DnDHash : 071D85E1
-variable = draw_get_font();
+/// @DnDHash : 20A64BF1
+/// @DnDInput : 2
+/// @DnDArgument : "function" "layer_depth"
+/// @DnDArgument : "arg" ""Instances""
+/// @DnDArgument : "arg_1" "obj_instances.depth-100"
+layer_depth("Instances", obj_instances.depth-100);
+
+/// @DnDAction : YoYo Games.Instances.Set_Instance_Var
+/// @DnDVersion : 1
+/// @DnDHash : 6D26A4A2
+/// @DnDArgument : "value" "obj_instances.depth-400"
+/// @DnDArgument : "instvar" "9"
+depth = obj_instances.depth-400;
+
+/// @DnDAction : YoYo Games.Instances.Set_Instance_Var
+/// @DnDVersion : 1
+/// @DnDHash : 011E512E
+/// @DnDApplyTo : {obj_menu}
+/// @DnDArgument : "value" "obj_instances.depth-400"
+/// @DnDArgument : "instvar" "9"
+with(obj_menu) {
+depth = obj_instances.depth-400;
+}
 
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
-/// @DnDHash : 6CF6F0D5
+/// @DnDHash : 1AA62969
 /// @DnDInput : 2
 /// @DnDArgument : "function" "layer_depth"
 /// @DnDArgument : "arg" ""Effect_1""

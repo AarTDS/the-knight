@@ -58,5 +58,21 @@ with(other) {
 		/// @DnDHash : 640BC2B9
 		/// @DnDParent : 1EFD1AF2
 		instance_destroy();
+	
+		/// @DnDAction : YoYo Games.Common.Apply_To
+		/// @DnDVersion : 1
+		/// @DnDHash : 060B9D5D
+		/// @DnDApplyTo : {obj_room}
+		/// @DnDParent : 1EFD1AF2
+		with(obj_room) {
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 69D1E424
+			/// @DnDParent : 060B9D5D
+			/// @DnDArgument : "expr" "5"
+			/// @DnDArgument : "expr_relative" "1"
+			/// @DnDArgument : "var" "global.score"
+			global.score += 5;
+		}
 	}
 }

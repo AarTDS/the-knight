@@ -15,13 +15,6 @@ image_yscale += -0.01;
 /// @DnDArgument : "alpha_relative" "1"
 image_alpha += -0.005;
 
-/// @DnDAction : YoYo Games.Instances.Set_Instance_Var
-/// @DnDVersion : 1
-/// @DnDHash : 6E2E3859
-/// @DnDArgument : "value" "obj_enemy.depth"
-/// @DnDArgument : "instvar" "9"
-depth = obj_enemy.depth;
-
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 32BB3059

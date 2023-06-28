@@ -1,12 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Sword_Draw",
-  "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
-  },
-  "soundFile": "Sword_Draw.mp3",
+  "name": "fireball",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -15,7 +10,12 @@
   "sampleRate": 44100,
   "type": 0,
   "bitDepth": 1,
-  "duration": 0.835918,
+  "audioGroupId": {
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
+  },
+  "soundFile": "fireball.mp3",
+  "duration": 5.041633,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

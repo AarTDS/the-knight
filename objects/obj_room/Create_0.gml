@@ -1,3 +1,18 @@
+/// @DnDAction : YoYo Games.Audio.Audo_Set_Master_Volume
+/// @DnDVersion : 1
+/// @DnDHash : 4D7561F4
+/// @DnDArgument : "volume" "5"
+audio_set_master_gain(0, 5);
+
+/// @DnDAction : YoYo Games.Instances.Set_Instance_Var
+/// @DnDVersion : 1
+/// @DnDHash : 730477FE
+/// @DnDApplyTo : {obj_instances}
+/// @DnDArgument : "instvar" "9"
+with(obj_instances) {
+depth = 0;
+}
+
 /// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
 /// @DnDVersion : 1.1
 /// @DnDHash : 75B6A708
@@ -20,6 +35,12 @@ audio_play_sound(nature, 0, 1, 1.0, undefined, 1.0);
 /// @DnDArgument : "lives" "5"
 
 __dnd_lives = real(5);
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 11D991A6
+/// @DnDArgument : "var" "global.score"
+global.score = 0;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -86,5 +107,5 @@ mp_grid_add_instances(global.AIGrid,obj_col, true);
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 182A4CDE
-/// @DnDArgument : "steps" "300"
-alarm_set(0, 300);
+/// @DnDArgument : "steps" "150"
+alarm_set(0, 150);

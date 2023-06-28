@@ -12,13 +12,6 @@ direction = point_direction(x, y, obj_player.x, obj_player.y);
 /// @DnDArgument : "angle_relative" "1"
 image_angle += 45;
 
-/// @DnDAction : YoYo Games.Instances.Set_Instance_Var
-/// @DnDVersion : 1
-/// @DnDHash : 6FB44D58
-/// @DnDArgument : "value" "obj_enemy.depth"
-/// @DnDArgument : "instvar" "9"
-depth = obj_enemy.depth;
-
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 68ACF8BD
